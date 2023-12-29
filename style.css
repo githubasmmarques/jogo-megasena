@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100&display=swap');
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-family1: 'Arial', sans-serif;
+    --bg-color: #F3F9FB; 
+    --primary-color: green;
+    --botao-color: yellow;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+    margin-top: 20px ;
+}
+
+.mensagem {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+i {
+    font-size: 1.5em;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 2em;
+    padding: 10px;
+    margin:  10px;
+}
+div {
+    font-family: var(--font-family1);
+}
+
+.btn-jogar {
+    padding: 8px 15 px;
+    border: 0;
+    background: var(--botao-color);
+    border-radius: 5px;
+    margin-top: 20px;
+
+
+    color:blue; 
+    padding:6px; 
+    border-radius:25px; 
+    font-weight: bold; 
+    background-color: wheat; 
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2); 
+
+}
