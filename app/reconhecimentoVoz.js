@@ -8,13 +8,19 @@ recognition.start()
 
 recognition.addEventListener('result', onSpeak)
 
+var vez = 1;
 function onSpeak(e) {
     chute = e.results[0][0].transcript;
-    exibeChuteNaTela(chute);
     console.log(e.results[0][0].transcript);
    // console.log(e.target.lang);
-   verificaSeChutePossuiUmValorValido(chute);
-
+   console.log('VEZ = ' + vez);
+   if (vez == 1) {
+     verificaNome(chute);
+   } else {
+       exibeChuteNaTela(chute);
+       verificaSeChutePossuiUmValorValido(chute);
+   }
+   vez = ++vez;
 }
 
 function exibeChuteNaTela(chute) {
