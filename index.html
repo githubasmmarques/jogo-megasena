@@ -9,21 +9,27 @@
     <title>Número Secreto</title>
 </head>
 <body>
-    <h1>Mega Sena da Virada</h1>
+    <h1>Mega Sena</h1>
     <b style="font-size:12px; font-weight: 600;">Analisando as probabilidades quânticas de sair cada número<br>
     Baseado no evento aleatório temporal<br><br></b>
-    <table width="80%" border="1">
-        <tr> 
-          <td width="40%" style="text-align: right;">
-                  <img src="ternoquadrado.jpg" alt="Terno Quadradp" width="120" height="60">
-              </td>
-          <td width="50%" style="text-align: left; vertical-align: middle;">
-                  <font FACE="Arial" SIZE="4" color="green">&emsp;<b>Olá, eu sou IA Gan Har</b></font> <br>
-                  <font FACE="Arial" SIZE="3" color="green">&emsp;<b>Fale um número entre <span id="menor-valor">0</span> e <span id="maior-valor">100</span></b></font><br>
-                  <font FACE="Arial" SIZE="3" color="green">&emsp;e eu calcularei as chances</b></font> 
-              </td>
-        </tr> 
-    </table>  
+
+    <section class="carrossel">
+        <h2 class="apresentacao"><b>Olá <span id="nome-jogador"></span><br>
+            &emsp;Eu sou IA Gan Har</b></h2>
+        <div class="carrossel__container">
+            <div class="imagem">
+                <img src="ternoquadrado.jpg" alt="Terno Quadradp">
+            </div>
+            <div class="card">
+                  <span id="faleNome"><font FACE="Arial" SIZE="3" color="green">&emsp;Fale seu nome</b></font></span>
+                  <span id="mensagem">
+                    <font FACE="Arial" SIZE="3" color="green">&emsp;<b>Fale um número entre <span id="menor-valor">0</span> e <span id="maior-valor">100</span></b></font><br>
+                    <font FACE="Arial" SIZE="3" color="green">&emsp;e eu calcularei as chances</b></font> 
+                  </span>
+            </div>
+        </div>
+    </section>
+
     
 
     <div id="chute" class="mensagem">

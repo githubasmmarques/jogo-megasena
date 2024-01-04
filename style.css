@@ -6,6 +6,10 @@
     --bg-color: #F3F9FB; 
     --primary-color: green;
     --botao-color: yellow;
+    --primary-color-cel: blue;
+    --bg-color-cel: yellow; 
+    --amarelo-degrade: linear-gradient(97.54deg, #ffffe6,  #ffffb3, #ffff80, #ffffb3,  #ffffe6, #ffffb3, #ffff80, #ffffb3,  #ffffe6 );
+    --amarelo-degrade1: linear-gradient(to bottom, #ffffe6,  #ffffb3, #ffff80, #ffffb3,  #ffffe6, #ffffb3, #ffff80, #ffffb3,  #ffffe6 );
 }
 
 body {
@@ -18,7 +22,7 @@ body {
     justify-content: center;
     text-align: center;
     margin: 0;
-    font-family: var(--font-family);
+    font-family: var(--font-family1);
 }
 
 h1 {
@@ -37,6 +41,10 @@ h3 {
 .mensagem {
     font-size: 0.8em;
     margin-top: 20px;
+}
+.apresentacao {
+    font-size: 2em;
+    color: var(--primary-color);
 }
 
 i {
@@ -69,4 +77,51 @@ div {
     background-color: wheat; 
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2); 
 
+}
+
+.fonte-vermelho {
+    color:yellow; 
+    font-weight: bold;
+}
+
+.carrossel__container {
+    display: flex;
+    margin: 0 10vw 3em 10vw;
+    align-items: center;
+}
+
+.imagem img {
+    width: 120px;
+    height:60px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background: var(--amarelo-degrade1);
+        color: var(--primary-color-cel);
+    }
+    h1 {
+        font-size: 4em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 1em;
+        margin-top: 20px ;
+    }
+    .carrossel__container {
+        display: flex;
+        flex-direction: column;
+
+        margin: 0 5vw 3em 5vw;
+        align-items: center;
+    }
+    .imagem img {
+        width: 50%;
+        height:50%;
+    }
+        
 }
