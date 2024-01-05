@@ -23,7 +23,7 @@ function verificaSeChutePossuiUmValorValido(chute) {
                 </tr> 
             </table>  
 
-            <font FACE="Arial" SIZE="4" color="green">O número <b style="font-size:24px; font-weight: 600;">${numeroSecreto}</b> tem grande probabilidade de sair na Mega Sena da Virada</font>
+            <font FACE="Arial" SIZE="4" color="green">O número <b style="font-size:24px; font-weight: 600;">${numeroSecreto}</b> tem grande probabilidade de sair na Mega Sena</font>
             
             <button id="jogar-novamente" class="btn-jogar">Calcular outro número</button>
         `
@@ -82,7 +82,7 @@ function chuteForInvalido(numero) {
             <h3 class="fonte-vermelho">Pressione o botão para jogar novamente</h3>
             <button id="jogar-novamente" class="btn-jogar" >Jogar novamente</button>
             `
-            document.body.style.backgroundColor = "black";
+            document.body.style.background = "black";
     } else {
         return Number.isNaN(numero);
         //elementoChute.innerHTML += '<div>Valor Inválido</div>';
